@@ -1,0 +1,9 @@
+{
+    "name": "CaptainAudio",
+    "version_number": "1.2.2",
+    "website_url": "https://github.com/KorCaptain/Valheim_Captain_Audio",
+    "description": "Custom audio replacement mod for Valheim. Replace music, ambient sounds, and SFX with your own audio files.",
+    "dependencies": [
+        "denikson-BepInExPack_Valheim-5.4.2202"
+    ]
+}

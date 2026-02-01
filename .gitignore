@@ -1,0 +1,13 @@
+# Build outputs
+bin/
+obj/
+*.dll
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Temp files
+*.tmp
+*.log
