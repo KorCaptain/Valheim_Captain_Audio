@@ -1,4 +1,5 @@
 # Captain Audio Ver 1.0
+*The English description is below
 
 발하임(Valheim) 게임용 커스텀 오디오 모드입니다. 음악, 환경음, 효과음을 DLL에 직접 포함시켜 배포할 수 있습니다.
 
@@ -96,3 +97,77 @@ dotnet build CaptainAudio.csproj -c Release
 - EmbeddedResource 방식으로 DLL에 음악 파일 내장
 - 기존 외부 파일 방식과 병행 지원
 - 향상된 로깅 및 오류 처리
+
+## English
+Built-in Music (Embedded in DLL)
+| Biome/Location | Tracks |
+|----------------|--------|
+| Meadow | 3 |
+| Black Forest | 3 |
+| Swamp | 3 |
+| Swamp Rain Day | 1 |
+| Mountain | 3 |
+| Plain | 3 |
+| Mistland | 3 |
+| Ashland | 2 |
+| Sailing | 3 |
+| Home | 3 |
+| Menu | 1 |
+| Morning | 2 |
+| Evening | 1 |
+| Forest Crypt | 2 |
+| Frost Caves | 1 |
+| Boss (Total) | 10 |
+| - Eikthyr | 1 |
+| - The Elder | 2 |
+| - Bonemass | 1 |
+| - Moder | 1 |
+| - Yagluth | 2 |
+| - The Queen | 1 |
+| - Fader | 2 |
+
+Total: 44 tracks
+
+Custom Music Priority
+When you add music files to the custom folder, ONLY your custom music will play!
+
+The built-in music for that biome/location is completely replaced.
+
+#### How to Use
+
+Create folder: BepInEx/plugins/CaptainAudio/Music/{FolderName}/
+Add your .ogg, .wav, or .mp3 files
+Start game - only your custom music plays for that location
+
+#### Example
+
+BepInEx/plugins/CaptainAudio/
+├── CaptainAudio.dll
+└── Music/
+    └── Meadow/            ← Add 2 custom songs here
+        ├── my_song1.ogg
+        └── my_song2.ogg
+
+
+Result: Built-in 3 Meadow tracks are ignored. Only your 2 custom songs play randomly.
+
+#### Folder Names
+
+Use these exact folder names:
+Meadow, BlackForest, Swamp, Swamprainday, Mountain, Plain
+Mistland, Ashland, Sailing, Home, Menu
+Morning, Evening, forestcrypt, frostcaves
+Boss_Eikthyr, Boss_TheElder, Boss_Bonemass, Boss_Moder
+Boss_Yagluth, Boss_TheQueen, Boss_Fader
+
+## Support / 지원
+
+- Discord: KorCaptainSkillTree_MOD_Server -  https://discord.gg/W26PTxYhug
+- E-mail : ssunyme@naver.com
+- Issues: Report bugs and suggestions on Discord
+
+---
+
+## Credits
+
+- **Developer**: KorCaptain
