@@ -52,7 +52,11 @@ namespace CaptainAudio
             {
                 Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), null);
                 StartCoroutine(AudioLoader.InitializeAsync());
-                Log.LogMessage("Captain Audio v1.2.2 loaded");
+
+                var prev = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("[CaptainAudio] CaptainAudio 1.3.1 Loaded!");
+                Console.ForegroundColor = prev;
             }
             catch (Exception ex)
             {
