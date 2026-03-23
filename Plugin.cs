@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace CaptainAudio
 {
-    [BepInPlugin("captain.CaptainAudio", "Captain Audio", "1.2.2")]
+    [BepInPlugin("captain.CaptainAudio", "Captain Audio", "1.3.1")]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin instance;
@@ -52,11 +52,11 @@ namespace CaptainAudio
             {
                 Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), null);
                 StartCoroutine(AudioLoader.InitializeAsync());
-                Log.LogInfo("<color=#00BFFF>Captain Audio v1.2.2 loaded</color>");
+                Log.LogMessage("Captain Audio v1.2.2 loaded");
             }
             catch (Exception ex)
             {
-                Log.LogError($"<color=#00BFFF>Critical error: {ex.Message}</color>");
+                Log.LogError($"Critical error: {ex.Message}");
             }
         }
     }
